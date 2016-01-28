@@ -1,6 +1,6 @@
 # Civio-Code-Challenge
 
-web scrapping exercise.
+web scraping exercise.
 
 * Ruby
 * Mechanzie
