@@ -1,0 +1,68 @@
+body {
+  background-color: grey;
+  font-family: 'ABeeZee', sans-serif; 
+  color: #fff;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.table-player-goals {
+  width: 80%;
+  margin: 40px auto;
+  font-size: 20px;
+}
+
+@media (max-width: 480px) {
+  .table-player-goals { 
+    font-size: 12px;
+  }
+}
+
+
+.table-player-goals tbody tr td {
+  vertical-align: middle;
+}
+
+.tb-goals {
+  text-align: center;
+}
+
+.tb-img {
+  max-width: 100px;
+}
+
+.img-player {
+  width: 50px;
+  height: 50px;
+  border-radius: 178px;
+  border: solid 2px #AFAFAF;
+  overflow: auto;
+  background-color: white;
+  margin: auto;
+}
+
+.img-player img{
+  width: 100%;
+}
+
+.img-team {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: auto;
+}
+
+.img-team img {
+  width: 65%;
+  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.player {
+  margin: 10px;
+}

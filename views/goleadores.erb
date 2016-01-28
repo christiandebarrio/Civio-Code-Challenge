@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Civio code challenge</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+
+  <h1>Goleadores</h1>
+
+  <div class="container">
+    <table class="table table-player-goals">
+      <thead>
+        <tr>
+          <th class="tb-photo tb-img"></th>
+          <th class="tb-name">Name</th>
+          <th class="tb-phot-team tb-img"></th>
+          <th class="tb-team">Team</th>
+          <th class="tb-goals">Goals</th>
+        </tr>
+      </thead>
+      <% @players.each do |player| %>
+        <tr class="player">
+          <td>
+            <div class="img-player">
+              <img src="<%= player[:photo_url] %>" alt="<%= player[:name] %>"  class="tb-photo"/>
+            </div>
+          </td>
+          <td class="tb-name"><%= player[:name] %></td>
+          <td class="tb-photo-team">
+            <div class="img-team">
+              <img src="<%= player[:photo_team_url] %>" alt="<%= player[:team] %>"  class="tb-photo"/>            
+            </div>
+          </td>
+          <td class="tb-team"><%= player[:team] %></td>
+          <td class="tb-goals"><%= player[:goals] %></td>
+      <% end %>
+    </table>
+  </div>
+
+</body>
+</html>
+
